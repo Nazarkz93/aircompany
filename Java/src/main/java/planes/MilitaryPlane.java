@@ -14,6 +14,7 @@ public class MilitaryPlane extends Plane{
     }
 
     public MilitaryType getType() {
+
         return type;
     }
 
@@ -29,7 +30,7 @@ public class MilitaryPlane extends Plane{
         if (this == o) return true;
         if (!(o instanceof MilitaryPlane)) return false;
         if (!super.equals(o)) return false;
-        return type == ((MilitaryType) o).type;
+        return type == ((MilitaryType) o);
     }
 
     @Override

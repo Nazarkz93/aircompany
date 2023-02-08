@@ -16,18 +16,22 @@ abstract public class Plane {
     }
 
     public String getModel() {
+
         return model;
     }
 
     public int getMaxSpeed() {
+
         return maxSpeed;
     }
 
-    public int GetMaxFlight_Distance() {
+    public int GetMaxFlightDistance() {
+
         return maxFlightDistance;
     }
 
     public int getMinLoadCapacity() {
+
         return this.maxLoadCapacity;
     }
 

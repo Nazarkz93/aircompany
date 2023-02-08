@@ -32,7 +32,7 @@ public class Airport {
         List<PassengerPlane> passengerPlanes = getPassengerPlanes();
         PassengerPlane planeWithMaxCapacity = passengerPlanes.get(0);
         for (PassengerPlane passengerPlane : passengerPlanes) {
-            if (passengerPlanes.getPassengersCapacity() > planeWithMaxCapacity.getPassengersCapacity()) {
+            if (passengerPlane.getPassengersCapacity() > planeWithMaxCapacity.getPassengersCapacity()) {
                 planeWithMaxCapacity = passengerPlane;
             }
         }
@@ -74,7 +74,7 @@ public class Airport {
     public Airport sortByMaxDistance() {
         Collections.sort(planes, new Comparator<Plane>() {
             public int compare(Plane firstPlane, Plane secondPlane) {
-                return firstPlane.getMaxFlightDistance() - secondPlane.getMaxFlightDistance();
+                return firstPlane.GetMaxFlightDistance() - secondPlane.GetMaxFlightDistance();
             }
         });
         return this;

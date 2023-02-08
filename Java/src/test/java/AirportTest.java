@@ -38,7 +38,7 @@ public class AirportTest {
     public void testGetTransportMilitaryPlanes() {
         Airport airport = new Airport(planes);
         List<MilitaryPlane> militaryPlanes = airport.getTransportMilitaryPlanes();
-        long transportCount = militaryPlanes.stream(
+        long transportCount = militaryPlanes.stream()
                 .filter(plane -> plane.getType() == MilitaryType.TRANSPORT)
                 .count();
         Assert.assertTrue(transportCount > 0);
